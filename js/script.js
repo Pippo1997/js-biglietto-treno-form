@@ -23,3 +23,33 @@
 //5-Mostrare a video il biglietto con nome e prezzo biglietto scontato o meno
 
 //6-Realizzare html per visualizzare risultati
+
+
+const price_button = document.getElementById(`calc`)
+price_button.addEventListener(`click`, function(){
+
+    let name_and_surname = document.getElementById(`name_and_surname`).value;
+
+    let eta = document.getElementById(`eta`).value;
+
+    let km = document.getElementById(`km`).value;
+
+    let prezzo = 0.21 * km;
+
+    if(eta == `minorenne`){
+        prezzo = (prezzo * 0.8).toFixed(2);
+    }
+
+    else if(eta == `over`){
+        prezzo = (prezzo * 0.6).toFixed(2);
+    }
+
+    else{
+        prezzo = (prezzo).toFixed(2);
+    }
+
+    document.getElementById(`put_nome`).innerText = name_and_surname;
+
+    document.getElementById(`put_prezzo`).innerText = prezzo;
+});
+    

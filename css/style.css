@@ -53,6 +53,14 @@ input{
     border-width: 2px;
 }
 
+select{
+    margin-top: 1rem;
+    border-radius: 5px;
+    padding: 3px;
+    border-color: rgba(185,21,80,255);
+    border-width: 2px;
+}
+
 button{
     margin: 1rem 1rem 0 0;
     padding: 8px;
@@ -92,4 +100,8 @@ button{
 
 .col-2-section2 p{
     padding-top: 1.5rem;
+}
+
+#put_nome{
+    padding-top: 0.5rem;
 }

@@ -19,19 +19,24 @@
                 <div class="col-1-section1">
                     <div>
                         <p class="pink">Nome e Cgnome</p>
-                        <input type="text" name="" value="">
+                        <input type="text" name="name_and_surname" id="name_and_surname" class="form-control">
                     </div>
                     <div>
                         <p class="pink">KM da percorrere</p>
-                        <input type="text" name="" value="">
+                        <input type="text" name="km" id="km" class="form-control">
                     </div>
                     <div>
                         <p class="pink">Fascia d'età</p>
-                        <input type="text" name="" value="">
+                        <select class="form-control" id="eta" name="eta">
+                            <option value="">Seleziona età</option>
+                            <option value="minorenne">minorenne</option>
+                            <option value="maggiorenne">maggiorenne</option>
+                            <option value="over">over</option>
+                        </select>
                     </div>
                 </div>
                 <div class="col-2-section1">
-                    <button id="">GENERA</button>
+                    <button id="calc">GENERA</button>
                     <button id="">ANNULLA</button>
                 </div>
             </div>
@@ -45,13 +50,13 @@
                     <h3>DETTAGLIO PASSEGGERI</h3>
                     <div class="grey">
                         <h3>NOME PASSEGGERO</h3>
-                        <p>.......</p>
+                        <p id="put_nome"></p>
                     </div>
                 </div>
                 <div class="col-2-section2">
                     <div>
                         <h5>Offerta</h5>
-                        <p>.....</p>
+                        <p>Biglietto standard</p>
                     </div>
                     <div>
                         <h5>Carrozza</h5>
@@ -63,7 +68,7 @@
                     </div>
                     <div>
                         <h5>Costo biglietto</h5>
-                        <p>......</p>
+                        <p id="put_prezzo"></p>
                     </div>
                 </div>
             </div>
