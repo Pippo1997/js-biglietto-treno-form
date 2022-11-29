@@ -50,6 +50,7 @@ input{
     border-radius: 5px;
     padding: 3px;
     border-color: rgba(185,21,80,255);
+    border-width: 2px;
 }
 
 button{
